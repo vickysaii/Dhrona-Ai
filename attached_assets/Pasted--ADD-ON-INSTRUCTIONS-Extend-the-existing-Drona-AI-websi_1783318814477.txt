@@ -1,0 +1,138 @@
+## ADD-ON INSTRUCTIONS — Extend the existing Drona AI website with the following:
+
+---
+
+### ADDITIONAL SERVICES (Add to the existing Services Section grid)
+
+Add these 5 new service cards to the existing services grid:
+
+11. 🧠 **Agentic AI Systems** — "Autonomous AI agents that think, plan, and execute multi-step tasks independently — from research bots to full business process agents."
+12. 🪞 **Digital Twins** — "Create real-time virtual replicas of your physical assets, factories, or processes to simulate, monitor, and optimize without real-world risk."
+13. 🎛️ **LLM Fine-Tuning** — "Custom-train large language models on your proprietary business data for domain-specific accuracy that generic models can't match."
+14. 👁️ **Computer Vision** — "AI-powered visual intelligence — object detection, facial recognition, quality inspection, surveillance, and gesture control for real-world deployment."
+15. 🔄 **AI Workflow Orchestration** — "Connect and automate complex multi-step business workflows using AI orchestration frameworks like LangGraph and CrewAI."
+
+---
+
+### NEW SECTION A — "AI Problems Holding Indian Businesses Back in 2026"
+
+**Placement:** Insert this section between the "What We Do" section and the "Services" section.
+
+**Design:** Dark card layout with a subtle red/amber warning tone — conveys urgency and pain. Each problem card has a muted red left border accent, a bold problem title, and a short sharp description. Section has a two-column grid on desktop.
+
+**Section heading:** "Why Most Indian Businesses Are Falling Behind in the AI Race"
+**Subheading:** "These are the real problems slowing down growth — and we fix every single one of them."
+
+**Problem Cards (include all of these):**
+
+1. 🚫 **No AI Strategy, Just Hype** — "Most businesses have heard of AI but have zero plan for actually implementing it. Competitors who do are already pulling ahead."
+2. 💸 **Wasted Budget on Wrong Tools** — "Companies are paying for generic SaaS AI tools that don't fit their actual workflow — burning money with no measurable ROI."
+3. 🧱 **Legacy Systems Blocking Automation** — "Old software, disconnected databases, and manual processes make it impossible to plug in modern AI without the right integration partner."
+4. 🙅 **No In-House AI Talent** — "Hiring AI engineers in India costs ₹15–40 LPA minimum. Most SMEs and startups simply cannot afford a full internal AI team."
+5. 📉 **Data Sitting Unused** — "Indian businesses generate massive amounts of data daily — invoices, calls, patient records, CCTV footage — and 90% of it is never analysed or used."
+6. 🔐 **Fear of Data Privacy Risks** — "Businesses want to use AI but are scared of data leaks, vendor lock-in, and not knowing where their sensitive data goes."
+7. 🐢 **Slow Manual Customer Support** — "Support teams drowning in repetitive WhatsApp messages, calls, and emails — while customers expect instant, 24/7 responses."
+8. 🌐 **Missing the Global AI Shift** — "Global competitors are deploying voice agents, RAG chatbots, and agentic systems right now. Indian businesses still relying on manual ops will be left behind by 2027."
+
+**Below the grid — bold callout strip:**
+"Drona AI was built specifically to solve these problems — for Indian businesses, at Indian budgets, with global-standard AI."
+CTA button: "Let's Fix This Together →" (electric blue, center-aligned)
+
+---
+
+### NEW SECTION B — FAQ Section
+
+**Placement:** Insert between the "Tech Stack" section and the "Contact / Booking" section.
+
+**Design:** Clean accordion-style FAQ. Dark background, each question is a clickable row that expands to show the answer. Electric blue arrow/chevron icon rotates on open. Subtle divider lines between items.
+
+**Section heading:** "Frequently Asked Questions"
+**Subheading:** "Everything you want to know before we start building."
+
+**FAQ Items:**
+
+Q1: **What industries does Drona AI serve?**
+A: We serve all industries — Healthcare, Defense, Education, Salons, Schools, Retail, Finance, Real Estate, Legal, Hospitality, and more. If your business has a process, we can automate or enhance it with AI.
+
+Q2: **How long does it take to build and deploy an AI solution?**
+A: Timelines depend on project complexity. A standard AI chatbot or WhatsApp automation typically takes 1–2 weeks. Custom agentic systems or LLM fine-tuning projects range from 3–8 weeks. We always share a clear timeline before starting.
+
+Q3: **Do I need technical knowledge to work with Drona AI?**
+A: Not at all. You bring the business problem — we handle everything technical. We explain every step in plain language so you're always in control without needing to understand the code.
+
+Q4: **How much does an AI solution cost?**
+A: Our solutions are priced to be accessible for Indian startups and SMEs. Projects start from ₹25,000 for basic automations and scale up based on complexity. We offer flexible packages — get in touch for a custom quote.
+
+Q5: **Will my business data be safe?**
+A: Absolutely. We build with data privacy as a core requirement — not an afterthought. Your data stays yours. We sign NDAs before starting any project and follow secure development practices throughout.
+
+Q6: **Can you integrate AI with my existing software or website?**
+A: Yes. We specialize in integrating AI into existing systems — whether you use a CRM, ERP, custom software, or third-party platforms. We build connectors and APIs that plug in cleanly.
+
+Q7: **Do you provide support after deployment?**
+A: Yes. Every project includes post-deployment support and monitoring. We offer ongoing maintenance packages so your AI system keeps performing as your business scales.
+
+Q8: **What makes Drona AI different from hiring a freelancer?**
+A: Freelancers build features. Drona AI builds systems. We bring a full team — AI engineers, designers, and deployment specialists — with accountability, proper documentation, and long-term support that a single freelancer cannot offer.
+
+Q9: **Can you fine-tune an AI model on my company's specific data?**
+A: Yes. LLM fine-tuning is one of our core services. We train models on your proprietary data — manuals, past conversations, product catalogs, medical records (anonymized) — to create AI that speaks your business language precisely.
+
+Q10: **How do I get started?**
+A: Simple — fill out the contact form on this page or reach us on WhatsApp. Describe your problem or idea, and we'll schedule a free 30-minute discovery call to scope out the solution.
+
+---
+
+### MOTION & SCROLL ANIMATION LAYER (Apply Globally)
+
+Add rich, scroll-driven motion across the entire website using the following specifications:
+
+**Global Scroll Behavior:**
+- Use Intersection Observer API or GSAP ScrollTrigger for all scroll animations
+- Each section fades in and slides up slightly (translateY: 40px → 0, opacity: 0 → 1) as it enters viewport
+- Stagger child elements inside sections (cards, list items, stat numbers) with 0.1s delay between each
+- Easing: cubic-bezier(0.22, 1, 0.36, 1) — smooth, natural deceleration
+
+**Hero Section Motion:**
+- Headline text animates in word by word on page load (stagger 0.08s per word)
+- Subtext fades in after headline completes
+- CTA buttons slide up and fade in last
+- Background: animated floating particle network (canvas or SVG) that responds subtly to mouse movement — slow, ambient, electric blue nodes connected by faint lines
+
+**Navbar:**
+- On scroll down: navbar compresses slightly in height and gains a frosted glass blur (backdrop-filter: blur(16px)) with a subtle dark border bottom
+- Logo and links scale down 5% smoothly on scroll
+
+**Service Cards:**
+- On hover: card lifts (translateY: -8px), border lights up with electric blue glow (box-shadow: 0 0 20px rgba(59,130,246,0.4))
+- Icon inside card rotates 10° on hover
+
+**Problem Cards (Indian Business Pain Points section):**
+- Cards animate in with a left-to-right stagger as user scrolls into section
+- Left border accent pulses subtly (opacity animation) to convey urgency
+
+**Tech Stack Logo Row:**
+- Continuous auto-scrolling marquee (left-to-right) — infinite loop, pauses on hover
+- Two rows moving in opposite directions for visual depth
+
+**Stats / Numbers:**
+- Counter animation — numbers count up from 0 when section enters viewport
+- Use easeOutExpo curve so numbers accelerate fast then settle
+
+**FAQ Accordion:**
+- Smooth expand/collapse with max-height transition (max-height: 0 → auto equivalent using JS measurement)
+- Chevron icon rotates 180° smoothly on open
+
+**Section Transitions:**
+- Between each major section, add a subtle diagonal or wave SVG divider in the dark background color
+- Creates a flowing, layered feel as user scrolls down — not flat blocks
+
+**Cursor (Desktop only):**
+- Custom cursor: small electric blue dot that follows mouse with a slight lag (lerp smoothing)
+- On hover over buttons/links: cursor expands into a ring shape
+
+**Scroll Progress Indicator:**
+- Thin electric blue progress bar at the very top of the page that fills left-to-right as user scrolls down the full page
+
+**Reduced Motion:**
+- Wrap all animations in @media (prefers-reduced-motion: reduce) check — if user has this enabled, disable all transforms and transitions for accessibility compliance
