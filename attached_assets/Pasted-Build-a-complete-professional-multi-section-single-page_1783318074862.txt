@@ -1,0 +1,161 @@
+Build a complete, professional, multi-section single-page website for "Dhrona AI" — an AI agency startup based in India that delivers end-to-end AI solutions across industries including Healthcare, Defense, Education, Salons, Schools, Retail, Finance, and more. The website should feel premium, futuristic, and trust-inspiring — like a top-tier global AI consultancy, not a template.
+
+---
+
+## DESIGN DIRECTION
+
+**Visual Identity:**
+- Dark background (#0A0A0F) with deep navy sections (#0D1117)
+- Primary accent: Electric blue (#3B82F6) with subtle cyan (#06B6D4) highlights
+- Secondary accent: Soft white (#F1F5F9) for headings, (#94A3B8) for body text
+- Gold/amber (#F59E0B) as a trust/premium highlight used sparingly (badges, borders)
+- Zero use of generic gradients — keep it clean, sharp, and bold
+
+**Typography:**
+- Display headings: "Space Grotesk" or "Outfit" — bold, modern, geometric
+- Body text: "Inter" — clean and readable
+- All font sizes should follow a clear scale: Hero H1 (64–72px), Section H2 (40–48px), Card H3 (22–24px), Body (16–18px), Caption (13–14px)
+- Letter spacing on headings: slightly wide (-0.02em to 0.01em)
+
+**Layout & Motion:**
+- Clean grid layout with generous whitespace
+- Subtle scroll-triggered fade-in animations on each section
+- Hover micro-interactions on all cards and buttons
+- No clutter — each section has one clear purpose
+
+---
+
+## SECTIONS (in order)
+
+---
+
+### 1. NAVIGATION BAR (Sticky Header)
+- Logo: "Drona AI" — text-based logo with a small geometric icon (drone or neural node motif) to the left, electric blue color
+- Nav links: Home | Services | Why Drona AI | Tech Stack | Contact
+- CTA Button (top right): "Book a Free Call" — filled electric blue, rounded pill style
+- Sticky on scroll, background becomes semi-transparent frosted glass on scroll
+- Mobile: Hamburger menu
+
+---
+
+### 2. HERO SECTION
+- Full-viewport height
+- Left side: 
+  - Small eyebrow label: "AI Solutions for Every Industry"
+  - Main heading (large, bold): "We Build AI That Works For YOUR Business"
+  - Subheading: "From intelligent chatbots to voice agents and full-scale AI automation — Drona AI delivers cutting-edge solutions tailored to Healthcare, Defense, Education, and beyond."
+  - Two CTA buttons: 
+    - Primary: "Explore Our Services" (electric blue, filled)
+    - Secondary: "Book a Free Consultation" (outlined, white border)
+- Right side: Animated visual — abstract AI neural network, floating orbs or particle grid (CSS/SVG animation)
+- Subtle scrolling ticker at the bottom showing industries served: "Healthcare · Defense · Education · Salons · Schools · Retail · Finance · Real Estate · Legal · Hospitality"
+
+---
+
+### 3. WHAT WE DO (About Section)
+- Section heading: "Transforming Businesses with Intelligent AI"
+- Three-column stat row: 
+  - "10+ Industries Served"
+  - "End-to-End Delivery"
+  - "Production-Ready AI Systems"
+- Short paragraph: "Drona AI is an AI agency that partners with businesses across all industries to design, build, and deploy AI systems — from scratch to production. We don't just build tools; we solve real business problems with AI that actually delivers results."
+- Subtle animated divider line below
+
+---
+
+### 4. SERVICES SECTION
+- Section heading: "Our AI Services"
+- Subheading: "Everything you need to automate, scale, and grow — powered by AI"
+- Grid of service cards (3 columns on desktop, 1 on mobile), each with:
+  - Relevant icon (modern line icon)
+  - Service name (bold)
+  - Short 2-line description
+
+**Services to include:**
+1. 🤖 AI Chatbots — "Custom RAG-powered chatbots trained on your business data for 24/7 intelligent customer support."
+2. 🎙️ Voice AI Agents — "Human-like AI phone agents that handle calls, appointments, and queries without human intervention."
+3. 💬 WhatsApp Automation — "Automate customer communication, lead nurturing, and support directly on WhatsApp using AI."
+4. 📊 AI Business Automation — "End-to-end workflow automation using AI to reduce manual effort and boost operational efficiency."
+5. 🏥 Domain-Specific AI Solutions — "Custom AI systems built for Healthcare, Defense, Education, Salons, Schools, and more."
+6. 🌐 Website Development — "Professional, modern websites built from scratch — responsive, fast, and optimized for conversions."
+7. 📈 AI-Powered Analytics — "Smart dashboards and data intelligence tools that turn your raw data into actionable insights."
+8. 🔗 API & System Integration — "Seamlessly connect AI tools with your existing CRM, ERP, or third-party platforms."
+9. 🛡️ AI for Defense & Security — "Secure, specialized AI systems for defense applications including surveillance, monitoring, and threat analysis."
+10. 🎓 AI in Education — "Intelligent tutoring systems, automated grading, and personalized learning tools for schools and EdTech."
+
+- Below the grid: Banner strip — "From Ideation → Design → Development → Testing → Deployment → Support — We Handle Everything."
+
+---
+
+### 5. WHY DRONA AI (Differentiator Section)
+- Section heading: "Why Choose Drona AI Over Other Agencies?"
+- Subheading: "We're not just another AI vendor. Here's what makes us different."
+- Two-column layout: Left = differentiator cards, Right = visual graphic or comparison table
+- Cards with bold title + description:
+
+1. ⚡ **End-to-End Ownership** — "We handle everything from strategy to deployment. No outsourcing, no handoffs, no excuses."
+2. 🎯 **Industry-Specific AI** — "We build AI that understands your domain — not generic tools resold with your logo on them."
+3. 🔬 **Research-Backed Development** — "Our team blends real AI/ML engineering with production-grade deployment — not just API wrappers."
+4. 💰 **Startup-Friendly Pricing** — "Enterprise-grade AI at pricing that actually makes sense for growing businesses."
+5. 🚀 **Speed to Market** — "We deliver working AI systems faster than traditional agencies — because we build, not consult."
+6. 🤝 **Transparent Collaboration** — "You get full visibility into the build process, with regular demos and clear milestones."
+7. 🌍 **Pan-India + Global Reach** — "Based in India, built for the world. We serve clients locally and internationally."
+8. 🔐 **Data Privacy First** — "Your business data stays yours. We build with security, compliance, and privacy baked in."
+
+---
+
+### 6. TECH STACK SECTION
+- Section heading: "Powered by Industry-Leading Technology"
+- Subheading: "We use the best tools available to build AI systems that are fast, reliable, and scalable."
+- Logo grid (4–6 columns, scrolling marquee on mobile) showing logos/icons of:
+
+**AI & ML:** Python, PyTorch, TensorFlow, LangChain, LlamaIndex, Hugging Face, Groq, OpenAI, Anthropic Claude
+**Databases & Vector Search:** PostgreSQL, Supabase, pgvector, MongoDB, Redis, ChromaDB
+**Backend & APIs:** FastAPI, Node.js, Express.js, Docker, REST APIs
+**Voice & Communication:** Vapi, Twilio, Meta Cloud API (WhatsApp), ElevenLabs
+**Frontend & Web:** React.js, Next.js, Tailwind CSS, Vercel
+**Cloud & Deployment:** AWS, Google Cloud, Render, Vercel, GitHub Actions
+**Computer Vision:** OpenCV, YOLOv8, ONNX Runtime
+**Other Tools:** Streamlit, n8n, Zapier, Retell AI
+
+- Below logos: Small note — "Don't see your tech? We integrate with whatever stack you're already running."
+
+---
+
+### 7. CONTACT / BOOKING SECTION
+- Section heading: "Let's Build Something Intelligent Together"
+- Subheading: "Tell us about your project — we'll get back to you within 24 hours."
+- Two-column layout:
+  - Left: Short motivating text + contact details (email, WhatsApp number, based in Hyderabad, India)
+  - Right: Clean contact form with the following fields:
+    - Full Name (text input)
+    - Company / Organization Name (text input)
+    - Email Address (email input)
+    - Phone Number with country code (tel input)
+    - Industry / Domain (dropdown: Healthcare, Defense, Education, Salon, School, Retail, Finance, Other)
+    - Service Interested In (multi-select or dropdown: Chatbot, Voice Agent, WhatsApp Automation, Website, Other)
+    - Project Description (textarea — "Tell us what you're trying to build or automate")
+    - Budget Range (dropdown: Under ₹50K / ₹50K–₹2L / ₹2L–₹5L / ₹5L+ / Let's discuss)
+    - CTA Button: "Send My Requirements →" (electric blue, full-width, bold)
+- Below form: "Or reach us directly on WhatsApp" with a WhatsApp button
+
+---
+
+### 8. FOOTER
+- Dark footer (#050508)
+- Left: Drona AI logo + one-line tagline: "Intelligent AI. Real Results."
+- Middle: Quick links — Home, Services, Why Drona AI, Tech Stack, Contact
+- Right: Social icons (LinkedIn, GitHub, Instagram, Twitter/X)
+- Bottom strip: "© 2025 Drona AI. All rights reserved. | Built with ❤️ in Hyderabad, India"
+
+---
+
+## OVERALL REQUIREMENTS
+- Fully responsive: mobile, tablet, desktop
+- Smooth scroll between sections
+- Section IDs for anchor navigation
+- Professional micro-animations (fade-in on scroll, hover effects on cards and buttons)
+- All text must be readable — never sacrifice readability for style
+- No stock-photo imagery — use abstract AI-themed SVG graphics, geometric shapes, and icon-based visuals
+- Fast loading — optimize all assets
+- Color accessibility: all text must pass contrast ratio standards
