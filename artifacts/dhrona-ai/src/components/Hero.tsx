@@ -190,11 +190,24 @@ export default function Hero() {
             ))}
           </h1>
 
+          {/* Scroll-down curiosity strip */}
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.88, ease: [0.22, 1, 0.36, 1] }}
+            className="flex items-center justify-center lg:justify-start mb-5"
+          >
+            <span className="inline-flex items-center gap-2 text-xs sm:text-sm font-medium text-secondary/90 border border-secondary/25 bg-secondary/5 px-4 py-2 rounded-full tracking-wide">
+              <span className="animate-bounce inline-block">↓</span>
+              Scroll down to see a live demo of what we build for our clients
+            </span>
+          </motion.div>
+
           {/* Subheading */}
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.9, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: 0.6, delay: 0.96, ease: [0.22, 1, 0.36, 1] }}
             className="text-lg sm:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed"
           >
             From intelligent chatbots to voice agents and full-scale AI automation — Dhrona AI delivers cutting-edge solutions tailored to Healthcare, Defense, Education, and beyond.

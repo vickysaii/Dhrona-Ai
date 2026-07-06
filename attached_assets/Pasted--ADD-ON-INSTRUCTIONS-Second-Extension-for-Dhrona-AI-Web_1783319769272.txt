@@ -1,0 +1,135 @@
+## ADD-ON INSTRUCTIONS — Second Extension for Dhrona AI Website
+
+---
+
+### NEW SECTION 1 — Live Chatbot Demo (Hero Section Enhancement)
+
+Add a floating chat widget in the bottom-right corner of the screen that is 
+visible globally across all sections while scrolling. It should appear as a 
+pulsing electric blue chat bubble icon with the label "Try Dhrona AI" above it.
+
+On click, it opens an embedded chat panel (360px wide, 500px tall) with:
+- Header: "Dhrona AI Assistant" with a small green "Live" dot indicator
+- Subtitle: "Ask me anything about our services"
+- Pre-loaded opening message from the bot: "Hi! 👋 I'm Dhrona AI's assistant. 
+  Ask me about our services, pricing, or how we can help your business."
+- Chat input at the bottom with placeholder: "Type your question..."
+- Send button in electric blue
+- 3 quick-reply suggestion chips above the input:
+  - "What services do you offer?"
+  - "How much does it cost?"
+  - "Book a free call"
+- The widget should feel premium — dark background (#0D1117), smooth open/close 
+  animation (slide up + fade in), electric blue accents
+
+Also add a banner strip just below the hero headline that reads:
+"↓ Scroll down to see a live demo of what we build for our clients"
+This creates curiosity and keeps visitors engaged past the fold.
+
+---
+
+### NEW SECTION 2 — Case Studies / Proof Section
+
+Placement: Insert after the "Services" section, before "Why Dhrona AI"
+
+Section heading: "Real AI. Real Results."
+Subheading: "Here's what we've built — and what it delivered."
+
+Design: Horizontal scrollable cards on mobile, 3-column grid on desktop. 
+Each card has a dark background, a colored top border (different accent per 
+card), and a clear Problem → Solution → Result layout.
+
+Case Study Cards:
+
+CARD 1 (Blue top border):
+- Industry tag: "🏥 Healthcare"
+- Title: "AI Patient Query Chatbot for a Multi-Specialty Clinic"
+- Problem: "Staff were overwhelmed handling 200+ repetitive patient queries 
+  daily via phone and WhatsApp — appointment timings, doctor availability, 
+  prescription info."
+- Solution: "Built a RAG-powered chatbot trained on the clinic's own data, 
+  deployed on WhatsApp and the clinic website. Integrated with their 
+  appointment system."
+- Result: "300+ queries handled per day autonomously. 80% reduction in 
+  front-desk call volume. Zero additional staff hired."
+- Tags: RAG Chatbot · WhatsApp Automation · FastAPI · pgvector
+
+CARD 2 (Amber top border):
+- Industry tag: "🛡️ Defense"
+- Title: "Computer Vision Driver Monitoring System — MCEME, Indian Army"
+- Problem: "Manual driver fitness assessment was inconsistent and time-consuming 
+  across high-stakes military vehicle operations."
+- Solution: "Built a real-time Driver Monitoring System using computer vision, 
+  YOLOv8 pose estimation, and OAK-D depth camera to detect drowsiness, 
+  distraction, and unsafe behavior."
+- Result: "Deployed at MCEME (Indian Army). Real-time alerts with sub-100ms 
+  latency. Fully operational in production environment."
+- Tags: Computer Vision · YOLOv8 · OAK-D · Defense AI
+
+CARD 3 (Cyan top border):
+- Industry tag: "🤖 Agentic AI"
+- Title: "Autonomous UGV Control System with Gesture Recognition"
+- Problem: "Operating unmanned ground vehicles in field environments required 
+  constant manual joystick input — limiting speed and operator safety."
+- Solution: "Built an agentic UGV control system using ArUco marker detection 
+  + YOLOv8 pose-based gesture classification. Operators control the vehicle 
+  using hand gestures captured by OAK-D camera in real time."
+- Result: "Fully hands-free UGV navigation. Gesture-to-command latency under 
+  80ms. Demonstrated in live field environment."
+- Tags: Agentic AI · Computer Vision · ROS2 · Gesture Control
+
+Below the cards — a subtle callout:
+"These are real systems we've built and deployed. 
+Your business could be our next case study."
+CTA: "Start Your Project →" (electric blue button, center aligned)
+
+---
+
+### NEW SECTION 3 — Who We're Built For (Industry Personalizer)
+
+Placement: Insert between "About / What We Do" section and the 
+"AI Problems" section.
+
+Section heading: "Built for Your Industry"
+Subheading: "Click your industry to see exactly how Dhrona AI can help you."
+
+Design: A row of clickable industry pill/tab buttons at the top. 
+When a tab is clicked, the content panel below updates dynamically 
+(no page reload — pure JS tab switching with smooth fade transition).
+
+Industry Tabs (8 tabs):
+Healthcare | Defense | Education | Salon & Spa | Schools | 
+Retail & E-commerce | Finance | Real Estate
+
+Content for each tab (title + 3 bullet use cases + a CTA):
+
+HEALTHCARE:
+Title: "AI for Hospitals, Clinics & Healthcare Providers"
+- AI chatbots for patient queries, appointment booking, and prescription info
+- Voice agents for automated follow-up calls and reminders
+- Computer vision for patient monitoring and anomaly detection
+- LLM fine-tuned on medical records for intelligent clinical assistance
+CTA: "See Healthcare Solutions →"
+
+DEFENSE:
+Title: "AI for Defense, Security & Surveillance"
+- Computer vision systems for real-time threat detection and monitoring
+- Autonomous UGV/drone control using gesture and vision-based commands
+- Driver monitoring systems for military vehicle safety
+- Secure, on-premise AI deployments with zero cloud dependency
+CTA: "See Defense Solutions →"
+
+EDUCATION:
+Title: "AI for Schools, Colleges & EdTech Platforms"
+- AI tutoring assistants trained on your curriculum
+- Automated assignment grading and performance tracking
+- WhatsApp bots for parent-teacher communication
+- LLM-powered doubt-solving chatbots for students
+CTA: "See Education Solutions →"
+
+SALON & SPA:
+Title: "AI for Salons, Spas & Beauty Businesses"
+- WhatsApp AI agent for appointment booking and reminders
+- Voice agent to handle incoming calls and slot confirmations
+- Loyalty program automation and personalized offers via WhatsApp
+- AI chatbot for service menu queries and
