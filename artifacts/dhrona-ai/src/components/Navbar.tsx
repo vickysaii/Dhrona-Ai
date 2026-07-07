@@ -8,8 +8,8 @@ const Logo = () => (
     <img
       src="/logo-transparent.png"
       alt="Dhrona AI — Architects of Intelligence"
-      className="h-16 w-auto object-contain"
-      style={{ filter: 'brightness(1.35) contrast(1.1)' }}
+      className="h-20 w-auto object-contain"
+      style={{ filter: 'brightness(1.8) contrast(1.15) saturate(1.3)' }}
       draggable={false}
     />
   </div>
