@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight, CheckCircle2 } from 'lucide-react';
+import ProjectEstimator from './ProjectEstimator';
 
 interface IndustryData {
   label: string;
@@ -233,6 +234,9 @@ export default function IndustryPersonalizer() {
             </div>
           ))}
         </div>
+
+        {/* AI Project Estimator — below the tab panels, same section */}
+        <ProjectEstimator />
       </div>
     </section>
   );

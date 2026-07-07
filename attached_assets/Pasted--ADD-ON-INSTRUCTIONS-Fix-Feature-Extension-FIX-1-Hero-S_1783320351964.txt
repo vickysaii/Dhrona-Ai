@@ -1,0 +1,192 @@
+## ADD-ON INSTRUCTIONS — Fix & Feature Extension
+
+---
+
+### FIX 1 — Hero Section Overlap (Critical)
+
+There is a visual overlap at the top of the hero section where the sticky 
+navbar is covering the beginning of the headline text. Fix this by:
+
+- Adding padding-top to the hero section equal to the navbar height 
+  (minimum 80px, use 90px to be safe)
+- If the navbar uses position: fixed or position: sticky, ensure the 
+  hero section has a corresponding top offset so content starts 
+  below the navbar — not behind it
+- On mobile, navbar height may be smaller (60px) — apply responsive 
+  padding accordingly using a media query
+- Do NOT change the navbar itself — only adjust the hero section's 
+  top spacing
+- After fixing, verify that the headline "We Build AI That Works For 
+  YOUR Business" is fully visible and not clipped or hidden behind 
+  the navbar on both desktop and mobile viewports
+
+---
+
+### FEATURE — AI Project Estimator (Integrated into "Built for Your Industry" Section)
+
+Do NOT create a new section. Instead, extend the existing 
+"Built for Your Industry" section to include an interactive 
+AI Project Estimator below the industry tab content panel.
+
+---
+
+#### PLACEMENT INSIDE THE SECTION:
+
+Structure of the updated "Built for Your Industry" section:
+
+1. Section heading & subheading (unchanged)
+2. Industry tab buttons row (unchanged)  
+3. Industry content panel (unchanged — shows use cases per tab)
+4. Divider line with label: "— Get Your Free AI Project Estimate —"
+5. ★ NEW: AI Project Estimator widget (added below, same section)
+6. Existing CTA button moves to below the estimator output
+
+---
+
+#### ESTIMATOR DESIGN:
+
+Container: Dark card (#0D1117), rounded corners (16px), electric blue 
+border (1px, 20% opacity), padding 40px. Sits inside the same section 
+wrapper — not a separate section. Heading inside the card:
+
+"🧮 Build Your AI Solution — Get an Instant Estimate"
+Subtext: "Answer 4 quick questions and we'll give you a tailored 
+scope and price range in seconds."
+
+---
+
+#### STEP-BY-STEP ESTIMATOR FLOW (4 steps, shown one at a time):
+
+The estimator is a multi-step form — one question per screen with 
+a smooth slide/fade transition between steps. Progress bar at top 
+of card shows Step 1 of 4, Step 2 of 4, etc. in electric blue.
+
+---
+
+STEP 1 — Industry Selection
+Question: "What industry are you in?"
+Input type: Icon grid — large clickable tiles (3 per row), 
+each with an emoji icon + label. Selected tile gets electric 
+blue border + background highlight.
+
+Options:
+🏥 Healthcare | 🛡️ Defense | 🎓 Education | ✂️ Salon & Spa
+🏫 Schools | 🛒 Retail | 💰 Finance | 🏠 Real Estate | 
+🍽️ Hospitality | 🏭 Manufacturing | ⚖️ Legal | 🔧 Other
+
+---
+
+STEP 2 — Service Selection
+Question: "What AI solution are you looking for?"
+Input type: Multi-select checkbox cards (user can pick more than one).
+Each card: icon + service name + 1-line description.
+
+Options:
+🤖 AI Chatbot — "Answers queries, captures leads 24/7"
+🎙️ Voice AI Agent — "Handles calls automatically"
+💬 WhatsApp Automation — "Automates customer messaging"
+🧠 Agentic AI System — "Autonomous multi-step task execution"
+👁️ Computer Vision — "Visual detection and recognition"
+🎛️ LLM Fine-Tuning — "Custom-trained AI on your data"
+🪞 Digital Twin — "Virtual replica of your process or asset"
+📊 AI Analytics Dashboard — "Turns data into insights"
+🌐 Website Development — "Professional business website"
+⚙️ Full AI Automation — "End-to-end workflow automation"
+
+---
+
+STEP 3 — Timeline Selection
+Question: "When do you need this ready?"
+Input type: Single-select pill buttons (horizontal row)
+
+Options:
+⚡ ASAP (Under 2 weeks) | 
+🗓️ 1 Month | 
+📆 2–3 Months | 
+🔭 Flexible / Just Exploring
+
+---
+
+STEP 4 — Budget Range Selection
+Question: "What's your approximate budget?"
+Input type: Single-select pill buttons
+
+Options:
+💰 Under ₹50,000 |
+💰💰 ₹50K – ₹2 Lakhs |
+💰💰💰 ₹2L – ₹5 Lakhs |
+🚀 ₹5 Lakhs+ |
+🤝 Let's Discuss
+
+---
+
+#### ESTIMATE OUTPUT SCREEN (shown after Step 4):
+
+After the user completes all 4 steps, show a styled result card 
+that dynamically generates output based on their selections. 
+Use JavaScript logic to calculate and display the result.
+
+Output card design: Electric blue gradient border, dark background, 
+clean layout with sections.
+
+Output card content:
+
+1. Header: "✅ Your Custom AI Estimate is Ready"
+
+2. Summary row — shows their selections as tags:
+   [Industry selected] · [Services selected] · [Timeline] · [Budget]
+
+3. Recommended Solution block:
+   Bold title based on selections. Examples:
+   - If Healthcare + Chatbot selected: 
+     "Recommended: RAG-Powered Healthcare Chatbot"
+   - If Salon + WhatsApp selected: 
+     "Recommended: WhatsApp Booking Automation for Salons"
+   - If Defense + Computer Vision selected: 
+     "Recommended: Real-Time Computer Vision Surveillance System"
+   - Default fallback: 
+     "Recommended: Custom AI Solution — [services selected]"
+
+4. Estimated Timeline block:
+   - ASAP → "Estimated: 1–2 weeks"
+   - 1 Month → "Estimated: 2–4 weeks"
+   - 2–3 Months → "Estimated: 4–10 weeks"
+   - Flexible → "Estimated: We'll plan together"
+
+5. Estimated Investment block:
+   Show a range based on budget + services selected:
+   - Under ₹50K + single simple service → "₹25,000 – ₹50,000"
+   - ₹50K–₹2L + 1-2 services → "₹50,000 – ₹1,80,000"
+   - ₹2L–₹5L + multiple services → "₹2,00,000 – ₹5,00,000"
+   - ₹5L+ or Full Automation → "₹5,00,000+ (Custom Enterprise Quote)"
+   - Let's Discuss → "Let's talk — we'll find what fits your budget"
+   
+   Below the range, add in small muted text:
+   "This is an indicative estimate. Final pricing depends on 
+   exact scope. We'll confirm everything before any work begins."
+
+6. What's Included block — bullet list:
+   "✔ Free 30-min discovery call
+    ✔ Detailed project proposal document
+    ✔ Fixed-price quote before we start
+    ✔ End-to-end build and deployment
+    ✔ Post-launch support included"
+
+7. Two CTA buttons:
+   Primary: "Book Your Free Call Now →" (electric blue, filled, large)
+   Secondary: "Start Over" (text link, muted — resets the estimator)
+
+8. Below buttons, small trust line:
+   "🔒 No commitment required. No spam. Just a real conversation."
+
+---
+
+#### ESTIMATOR INTERACTION NOTES:
+
+- Back button on each step (except Step 1) allows user to go back 
+  and change a previous answer
+- All selections are stored in JS state — not submitted to any server
+- The estimator should work fully client-side with zero backend
+- Smooth slide animation between steps (translateX transition)
+- On mobile: full width, touch-friendly tap targets (min 48px height)
+-

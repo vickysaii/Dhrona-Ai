@@ -119,7 +119,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative min-h-[100dvh] flex flex-col justify-center pt-20 overflow-hidden">
+    <section className="relative min-h-[100dvh] flex flex-col justify-center pt-16 lg:pt-[92px] overflow-hidden">
       {/* Particle canvas — full hero background */}
       <canvas
         ref={canvasRef}
@@ -132,7 +132,7 @@ export default function Hero() {
       <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-[130px] pointer-events-none" style={{ zIndex: 0 }} />
 
       <div
-        className="container mx-auto px-4 sm:px-6 lg:px-8 flex-1 flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-8 py-12 lg:py-0"
+        className="container mx-auto px-4 sm:px-6 lg:px-8 flex-1 flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-8 py-12 pb-20 lg:pb-20"
         style={{ position: 'relative', zIndex: 10 }}
       >
         {/* Left Column */}

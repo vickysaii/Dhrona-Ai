@@ -70,11 +70,11 @@ export default function Contact() {
                 <span className="font-medium">hello@dhronaai.com</span>
               </a>
               
-              <a href="tel:+919876543210" className="flex items-center gap-4 text-muted-foreground hover:text-foreground transition-colors group">
+              <a href="tel:+916305567851" className="flex items-center gap-4 text-muted-foreground hover:text-foreground transition-colors group">
                 <div className="w-12 h-12 rounded-full bg-card border border-white/10 flex items-center justify-center group-hover:border-primary/50 group-hover:bg-primary/10 transition-colors">
                   <Phone className="w-5 h-5 text-primary" />
                 </div>
-                <span className="font-medium">+91 98765 43210</span>
+                <span className="font-medium">+91 63055 67851</span>
               </a>
 
               <div className="flex items-center gap-4 text-muted-foreground">
@@ -176,7 +176,7 @@ export default function Contact() {
             <div className="mt-8 text-center border-t border-white/10 pt-6">
               <p className="text-muted-foreground mb-4">Or reach us directly on WhatsApp</p>
               <a 
-                href="https://wa.me/919876543210" 
+                href="https://wa.me/916305567851" 
                 target="_blank" 
                 rel="noreferrer"
                 className="inline-flex h-12 items-center justify-center rounded-full bg-[#25D366] px-8 text-base font-bold text-white transition-all hover:bg-[#25D366]/90 hover:scale-105"
