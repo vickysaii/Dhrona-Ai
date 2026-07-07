@@ -6,9 +6,9 @@ import { useTheme } from '@/contexts/ThemeContext';
 const Logo = () => (
   <div className="flex items-center gap-3 z-50 relative">
     <img
-      src="/logo-new.png"
+      src="/logo-icon.png"
       alt="Dhrona AI"
-      className="h-11 w-11 object-contain drop-shadow-[0_0_8px_rgba(245,158,11,0.5)]"
+      className="h-12 w-12 object-contain drop-shadow-[0_0_10px_rgba(59,130,246,0.6)]"
       draggable={false}
     />
     <div className="flex flex-col leading-none">

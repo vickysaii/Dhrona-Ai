@@ -4,9 +4,9 @@ import { Linkedin, Github, Instagram, Twitter } from 'lucide-react';
 const LogoMark = () => (
   <div className="flex items-center gap-2.5">
     <img
-      src="/logo-new.png"
+      src="/logo-icon.png"
       alt="Dhrona AI"
-      className="h-9 w-9 object-contain drop-shadow-[0_0_6px_rgba(245,158,11,0.45)]"
+      className="h-10 w-10 object-contain drop-shadow-[0_0_8px_rgba(59,130,246,0.5)]"
       draggable={false}
     />
     <div className="flex flex-col leading-none">
