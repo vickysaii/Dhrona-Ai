@@ -3,32 +3,14 @@ import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const Logo = () => (
-  <div className="flex items-center gap-2 z-50 relative">
-    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M8 4L18 4C23.5228 4 28 8.47715 28 14V18C28 23.5228 23.5228 28 18 28L8 28V4Z" stroke="#3B82F6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-      <circle cx="8" cy="4" r="2" fill="#3B82F6"/>
-      <circle cx="18" cy="4" r="2" fill="#3B82F6"/>
-      <circle cx="28" cy="14" r="2" fill="#3B82F6"/>
-      <circle cx="28" cy="18" r="2" fill="#3B82F6"/>
-      <circle cx="18" cy="28" r="2" fill="#3B82F6"/>
-      <circle cx="8" cy="28" r="2" fill="#3B82F6"/>
-      <circle cx="8" cy="16" r="2" fill="#3B82F6"/>
-      <line x1="8" y1="4" x2="18" y2="4" stroke="#3B82F6" strokeWidth="1.5" strokeDasharray="2 2"/>
-      <line x1="18" y1="4" x2="28" y2="14" stroke="#3B82F6" strokeWidth="1.5" strokeDasharray="2 2"/>
-      <line x1="28" y1="14" x2="28" y2="18" stroke="#3B82F6" strokeWidth="1.5" strokeDasharray="2 2"/>
-      <line x1="28" y1="18" x2="18" y2="28" stroke="#3B82F6" strokeWidth="1.5" strokeDasharray="2 2"/>
-      <line x1="18" y1="28" x2="8" y2="28" stroke="#3B82F6" strokeWidth="1.5" strokeDasharray="2 2"/>
-      <line x1="8" y1="4" x2="8" y2="16" stroke="#3B82F6" strokeWidth="1.5" strokeDasharray="2 2"/>
-      <line x1="8" y1="16" x2="8" y2="28" stroke="#3B82F6" strokeWidth="1.5" strokeDasharray="2 2"/>
-      <line x1="8" y1="16" x2="18" y2="16" stroke="#3B82F6" strokeWidth="1.5" strokeDasharray="2 2"/>
-      <circle cx="18" cy="16" r="2" fill="#3B82F6"/>
-    </svg>
-    <div className="flex flex-col">
-      <div className="flex items-baseline gap-1">
-        <span className="font-display font-bold text-xl tracking-tight text-foreground">DHRONA</span>
-        <span className="font-display font-semibold text-lg text-foreground">A<span className="text-accent">i</span></span>
-      </div>
-      <span className="text-[10px] uppercase tracking-widest text-muted-foreground font-semibold leading-none -mt-0.5">AI Agency</span>
+  <div className="flex items-center z-50 relative">
+    <div className="bg-white rounded-xl px-3 py-1.5">
+      <img
+        src="/logo.jpg"
+        alt="Dhrona AI — Architects of Intelligence"
+        className="h-9 w-auto object-contain"
+        draggable={false}
+      />
     </div>
   </div>
 );
