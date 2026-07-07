@@ -49,53 +49,65 @@
   --radius-xl: calc(var(--radius) + 4px);
 }
 
-/* Base Theme */
+/* ─── Brand tokens (always the same) ─────────────────────────────────────── */
 :root {
-  --background: 240 20% 5%; /* #0A0A0F */
-  --foreground: 210 40% 96%; /* #F1F5F9 */
-  
-  --card: 216 28% 7%; /* #0D1117 */
-  --card-foreground: 210 40% 96%;
-  --card-border: 216 28% 12%;
-  
-  --popover: 216 28% 7%;
-  --popover-foreground: 210 40% 96%;
-  --popover-border: 216 28% 12%;
-
-  --primary: 217 91% 60%; /* #3B82F6 */
+  --primary: 217 91% 60%;         /* #3B82F6 electric blue */
   --primary-foreground: 0 0% 100%;
-  
-  --secondary: 38 92% 50%; /* #F59E0B */
-  --secondary-foreground: 0 0% 100%;
-  
-  --muted: 216 28% 12%;
-  --muted-foreground: 215 16% 65%; /* #94A3B8 */
 
-  --accent: 188 94% 43%; /* #06B6D4 */
+  --secondary: 38 92% 50%;        /* #F59E0B amber */
+  --secondary-foreground: 0 0% 100%;
+
+  --accent: 188 94% 43%;          /* #06B6D4 cyan */
   --accent-foreground: 0 0% 100%;
 
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 100%;
 
-  --border: 216 28% 15%;
-  --input: 216 28% 15%;
   --ring: 217 91% 60%;
-
   --app-font-sans: 'Inter', sans-serif;
   --app-font-display: 'Space Grotesk', sans-serif;
-  --radius: 0.75rem; 
+  --radius: 0.75rem;
 }
 
-/* Only have one mode, it's always dark basically, but keeping class for completeness if needed */
+/* ─── Dark theme (default) ───────────────────────────────────────────────── */
+:root,
 .dark {
-  --background: 240 20% 5%;
-  --foreground: 210 40% 96%;
-  --border: 216 28% 15%;
-  --input: 216 28% 15%;
-  --ring: 217 91% 60%;
-  --card: 216 28% 7%;
+  --background: 240 20% 5%;       /* #0A0A0F */
+  --foreground: 210 40% 96%;      /* #F1F5F9 */
+
+  --card: 216 28% 7%;             /* #0D1117 */
   --card-foreground: 210 40% 96%;
   --card-border: 216 28% 12%;
+
+  --popover: 216 28% 7%;
+  --popover-foreground: 210 40% 96%;
+  --popover-border: 216 28% 12%;
+
+  --muted: 216 28% 12%;
+  --muted-foreground: 215 16% 65%; /* #94A3B8 */
+
+  --border: 216 28% 15%;
+  --input: 216 28% 15%;
+}
+
+/* ─── Light theme ────────────────────────────────────────────────────────── */
+.light {
+  --background: 0 0% 98%;         /* near white */
+  --foreground: 222 47% 11%;      /* dark navy */
+
+  --card: 0 0% 100%;              /* white */
+  --card-foreground: 222 47% 11%;
+  --card-border: 214 32% 88%;
+
+  --popover: 0 0% 100%;
+  --popover-foreground: 222 47% 11%;
+  --popover-border: 214 32% 88%;
+
+  --muted: 210 40% 96%;
+  --muted-foreground: 215 16% 47%;
+
+  --border: 214 32% 88%;
+  --input: 214 32% 88%;
 }
 
 @layer base {

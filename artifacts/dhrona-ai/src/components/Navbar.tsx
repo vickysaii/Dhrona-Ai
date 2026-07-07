@@ -1,17 +1,16 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Sun, Moon } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useTheme } from '@/contexts/ThemeContext';
 
 const Logo = () => (
   <div className="flex items-center z-50 relative">
-    <div className="bg-white rounded-xl px-3 py-1.5">
-      <img
-        src="/logo.jpg"
-        alt="Dhrona AI — Architects of Intelligence"
-        className="h-9 w-auto object-contain"
-        draggable={false}
-      />
-    </div>
+    <img
+      src="/logo-transparent.png"
+      alt="Dhrona AI — Architects of Intelligence"
+      className="h-11 w-auto object-contain"
+      draggable={false}
+    />
   </div>
 );
 
@@ -43,6 +42,7 @@ const NavLinks = ({ onClick }: { onClick?: () => void }) => {
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { theme, toggleTheme } = useTheme();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -55,7 +55,9 @@ export default function Navbar() {
   return (
     <header
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? 'bg-background/80 backdrop-blur-md border-b border-white/5' : 'bg-transparent'
+        scrolled
+          ? 'bg-background/80 backdrop-blur-md border-b border-border/40'
+          : 'bg-transparent'
       }`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
@@ -66,8 +68,41 @@ export default function Navbar() {
           <NavLinks />
         </nav>
 
-        {/* CTA */}
-        <div className="hidden md:block">
+        {/* Right side: theme toggle + CTA */}
+        <div className="hidden md:flex items-center gap-3">
+          {/* Dark / Light toggle */}
+          <button
+            onClick={toggleTheme}
+            aria-label={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
+            className="w-9 h-9 flex items-center justify-center rounded-full border border-border/60 bg-background/60 text-muted-foreground hover:text-foreground hover:border-primary/50 hover:bg-primary/10 transition-all duration-200"
+          >
+            <AnimatePresence mode="wait" initial={false}>
+              {theme === 'dark' ? (
+                <motion.span
+                  key="sun"
+                  initial={{ rotate: -60, opacity: 0 }}
+                  animate={{ rotate: 0, opacity: 1 }}
+                  exit={{ rotate: 60, opacity: 0 }}
+                  transition={{ duration: 0.2 }}
+                  className="flex"
+                >
+                  <Sun className="w-4 h-4" />
+                </motion.span>
+              ) : (
+                <motion.span
+                  key="moon"
+                  initial={{ rotate: 60, opacity: 0 }}
+                  animate={{ rotate: 0, opacity: 1 }}
+                  exit={{ rotate: -60, opacity: 0 }}
+                  transition={{ duration: 0.2 }}
+                  className="flex"
+                >
+                  <Moon className="w-4 h-4" />
+                </motion.span>
+              )}
+            </AnimatePresence>
+          </button>
+
           <a
             href="#contact"
             className="inline-flex h-10 items-center justify-center rounded-full bg-primary px-6 text-sm font-medium text-primary-foreground transition-all hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring animate-pulse-ring hover:scale-105"
@@ -76,14 +111,23 @@ export default function Navbar() {
           </a>
         </div>
 
-        {/* Mobile Toggle */}
-        <button
-          className="md:hidden z-50 p-2 -mr-2 text-foreground"
-          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          aria-label="Toggle Menu"
-        >
-          {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        {/* Mobile: toggle + hamburger */}
+        <div className="md:hidden flex items-center gap-2 z-50">
+          <button
+            onClick={toggleTheme}
+            aria-label={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
+            className="w-9 h-9 flex items-center justify-center rounded-full border border-border/60 bg-background/60 text-muted-foreground"
+          >
+            {theme === 'dark' ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
+          </button>
+          <button
+            className="p-2 -mr-2 text-foreground"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label="Toggle Menu"
+          >
+            {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile Menu Drawer */}
@@ -99,7 +143,7 @@ export default function Navbar() {
             <nav className="flex flex-col gap-6 text-lg">
               <NavLinks onClick={() => setMobileMenuOpen(false)} />
             </nav>
-            <div className="mt-8 pt-8 border-t border-white/10">
+            <div className="mt-8 pt-8 border-t border-border/30">
               <a
                 href="#contact"
                 onClick={() => setMobileMenuOpen(false)}
