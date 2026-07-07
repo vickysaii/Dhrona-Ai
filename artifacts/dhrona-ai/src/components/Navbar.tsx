@@ -4,14 +4,22 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useTheme } from '@/contexts/ThemeContext';
 
 const Logo = () => (
-  <div className="flex items-center z-50 relative">
+  <div className="flex items-center gap-3 z-50 relative">
     <img
-      src="/logo-transparent.png"
-      alt="Dhrona AI — Architects of Intelligence"
-      className="h-24 w-auto object-contain"
-      style={{ filter: 'brightness(2) contrast(1.2) saturate(1.4) drop-shadow(0 0 6px rgba(212,170,60,0.35))' }}
+      src="/logo-new.png"
+      alt="Dhrona AI"
+      className="h-11 w-11 object-contain drop-shadow-[0_0_8px_rgba(245,158,11,0.5)]"
       draggable={false}
     />
+    <div className="flex flex-col leading-none">
+      <div className="flex items-baseline gap-0.5">
+        <span className="font-display font-bold text-[1.15rem] tracking-tight text-foreground">DHRONA</span>
+        <span className="font-display font-bold text-[1.15rem] text-primary ml-1">AI</span>
+      </div>
+      <span className="text-[9px] uppercase tracking-[0.18em] text-secondary/80 font-semibold mt-0.5">
+        Architects of Intelligence
+      </span>
+    </div>
   </div>
 );
 

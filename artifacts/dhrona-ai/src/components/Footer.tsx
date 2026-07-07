@@ -2,29 +2,21 @@ import React from 'react';
 import { Linkedin, Github, Instagram, Twitter } from 'lucide-react';
 
 const LogoMark = () => (
-  <div className="flex items-center gap-2">
-    <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M8 4L18 4C23.5228 4 28 8.47715 28 14V18C28 23.5228 23.5228 28 18 28L8 28V4Z" stroke="#3B82F6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-      <circle cx="8" cy="4" r="2" fill="#3B82F6"/>
-      <circle cx="18" cy="4" r="2" fill="#3B82F6"/>
-      <circle cx="28" cy="14" r="2" fill="#3B82F6"/>
-      <circle cx="28" cy="18" r="2" fill="#3B82F6"/>
-      <circle cx="18" cy="28" r="2" fill="#3B82F6"/>
-      <circle cx="8" cy="28" r="2" fill="#3B82F6"/>
-      <circle cx="8" cy="16" r="2" fill="#3B82F6"/>
-      <line x1="8" y1="4" x2="18" y2="4" stroke="#3B82F6" strokeWidth="1.5" strokeDasharray="2 2"/>
-      <line x1="18" y1="4" x2="28" y2="14" stroke="#3B82F6" strokeWidth="1.5" strokeDasharray="2 2"/>
-      <line x1="28" y1="14" x2="28" y2="18" stroke="#3B82F6" strokeWidth="1.5" strokeDasharray="2 2"/>
-      <line x1="28" y1="18" x2="18" y2="28" stroke="#3B82F6" strokeWidth="1.5" strokeDasharray="2 2"/>
-      <line x1="18" y1="28" x2="8" y2="28" stroke="#3B82F6" strokeWidth="1.5" strokeDasharray="2 2"/>
-      <line x1="8" y1="4" x2="8" y2="16" stroke="#3B82F6" strokeWidth="1.5" strokeDasharray="2 2"/>
-      <line x1="8" y1="16" x2="8" y2="28" stroke="#3B82F6" strokeWidth="1.5" strokeDasharray="2 2"/>
-      <line x1="8" y1="16" x2="18" y2="16" stroke="#3B82F6" strokeWidth="1.5" strokeDasharray="2 2"/>
-      <circle cx="18" cy="16" r="2" fill="#3B82F6"/>
-    </svg>
-    <div className="flex items-baseline gap-1">
-      <span className="font-display font-bold text-lg tracking-tight text-white">DHRONA</span>
-      <span className="font-display font-semibold text-base text-white">A<span className="text-accent">i</span></span>
+  <div className="flex items-center gap-2.5">
+    <img
+      src="/logo-new.png"
+      alt="Dhrona AI"
+      className="h-9 w-9 object-contain drop-shadow-[0_0_6px_rgba(245,158,11,0.45)]"
+      draggable={false}
+    />
+    <div className="flex flex-col leading-none">
+      <div className="flex items-baseline gap-0.5">
+        <span className="font-display font-bold text-lg tracking-tight text-white">DHRONA</span>
+        <span className="font-display font-bold text-lg text-primary ml-1">AI</span>
+      </div>
+      <span className="text-[8px] uppercase tracking-[0.18em] text-secondary/70 font-semibold mt-0.5">
+        Architects of Intelligence
+      </span>
     </div>
   </div>
 );
