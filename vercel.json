@@ -3,5 +3,5 @@
   "framework": "vite",
   "installCommand": "pnpm install --frozen-lockfile",
   "buildCommand": "pnpm --filter @workspace/dhrona-ai build",
-  "outputDirectory": "dist/public"
+  "outputDirectory": "artifacts/dhrona-ai/dist/public"
 }
